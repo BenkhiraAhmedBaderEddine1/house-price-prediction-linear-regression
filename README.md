@@ -1,2 +1,11 @@
-# house-price-prediction-linear-regression
-Bachelor Thesis Project (2025): Machine Learning-based house price prediction using Linear Regression with 92% R² accuracy. Includes data analysis, model training, evaluation, and performance validation.
+# House Price Prediction Using Linear Regression
+
+Bachelor Thesis Project – 2025  
+University of Boumerdes  
+
+This project implements a Linear Regression model to predict house prices.
+
+## How to Run
+
+pip install -r requirements.txt  
+python model.py
