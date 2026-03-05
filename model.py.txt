@@ -1,0 +1,58 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
+
+# Load Dataset
+data = pd.read_csv("USA_Housing.csv")
+
+# Drop non-numeric column
+data = data.drop("Address", axis=1)
+
+# Features and Target
+X = data.drop("Price", axis=1)
+y = data["Price"]
+
+# Standardization
+scaler = StandardScaler()
+X_scaled = scaler.fit_transform(X)
+
+# Train-Test Split
+X_train, X_test, y_train, y_test = train_test_split(
+    X_scaled, y, test_size=0.3, random_state=11
+)
+
+# Create Model
+model = LinearRegression()
+
+# Train Model
+model.fit(X_train, y_train)
+
+# Predictions
+predictions = model.predict(X_test)
+
+# Evaluation
+r2 = r2_score(y_test, predictions)
+mae = mean_absolute_error(y_test, predictions)
+mse = mean_squared_error(y_test, predictions)
+
+print("R2 Score:", r2)
+print("Mean Absolute Error:", mae)
+print("Mean Squared Error:", mse)
+
+# Plot Actual vs Predicted
+plt.scatter(y_test, predictions)
+plt.xlabel("Actual Prices")
+plt.ylabel("Predicted Prices")
+plt.title("Actual vs Predicted Prices")
+plt.show()
+
+# Residual Plot
+sns.histplot(y_test - predictions, kde=True)
+plt.title("Residual Distribution")
+plt.show()
