@@ -1,10 +1,4 @@
 # House Price Prediction Using Linear Regression
-
-Bachelor Thesis Project – 2025  
-University of Boumerdes  
-
-This project implements a Linear Regression model to predict house prices.
-
 House Price ($)
       ^
 $900k |                                               * /
@@ -24,6 +18,17 @@ $150k |    * * /
 
           Key:   [*] Actual House Prices (Data Points)
                  [/] Linear Regression Line (Predicted Trend)
+
+
+
+
+
+
+Bachelor Thesis Project – 2025  
+University of Boumerdes  
+
+This project implements a Linear Regression model to predict house prices.
+
 
 
 
