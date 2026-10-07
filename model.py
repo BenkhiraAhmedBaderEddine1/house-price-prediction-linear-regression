@@ -11,6 +11,7 @@ from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 # Load Dataset
 data = pd.read_csv("USA_Housing.csv")
 
+
 # Drop non-numeric column
 data = data.drop("Address", axis=1)
 
