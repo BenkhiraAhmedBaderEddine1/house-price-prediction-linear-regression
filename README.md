@@ -1,6 +1,5 @@
 # House Price Prediction Using Linear Regression
 
-
 Bachelor Thesis Project – 2025  
 University of Boumerdes  
 
