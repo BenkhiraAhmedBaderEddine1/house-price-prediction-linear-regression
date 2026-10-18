@@ -38,3 +38,143 @@
 </div>
 
  
+ <div align="center">
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=5&color=0:063D2B,50:C8A85D,100:063D2B" />
+
+</div>
+
+# <div align="center">✦ 01 · THE ULTIMATE PROJECT DESCRIPTION ✦</div>
+
+<div align="center">
+
+## **HOUSE PRICE PREDICTION USING MACHINE LEARNING**
+
+* A Data-Driven Approach to Real Estate Valuation *
+
+<img src="https://img.shields.io/badge/REAL_ESTATE-0D281D?style=for-the-badge&labelColor=0D281D" />
+<img src="https://img.shields.io/badge/MACHINE_LEARNING-176B50?style=for-the-badge&labelColor=0D281D" />
+<img src="https://img.shields.io/badge/MULTIPLE_LINEAR_REGRESSION-C8A85D?style=for-the-badge&labelColor=0D281D" />
+
+</div>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:063D2B,50:2ECC71,100:063D2B" />
+
+### ◈ Project Description
+
+The **House Price Prediction** project is a machine learning application designed to estimate residential property prices based on important characteristics of the surrounding area and the property itself.
+
+In traditional real estate valuation, estimating a house's price can be difficult because property values depend on multiple interacting factors, including average area income, house age, number of rooms, number of bedrooms, and population. Manual estimation may be time-consuming and can vary depending on the evaluator's judgment.
+
+To address this challenge, our project applies **supervised machine learning using Multiple Linear Regression** to learn the relationship between property-related features and their corresponding prices.
+
+The system uses the `USA_Housing.csv` dataset, containing **5,000 records**. Five numerical features are used as model inputs, while the house price is treated as the target variable. The address column is excluded from the selected model features.
+
+The dataset is processed and analyzed using Python libraries, including **Pandas, NumPy, Matplotlib, Seaborn, and Scikit-learn**. The data is divided into training and testing sets, allowing the model to learn from one portion of the data and evaluate its predictive performance on another.
+
+After training, the model generates price estimates and evaluates them using performance metrics such as the coefficient of determination (\(R^2\)) and Mean Absolute Error (MAE).
+
+According to the project report, the model achieved an \(R^2\) score of approximately **0.920** on the test set, indicating that it explains around **92% of the variation** in house prices within that test dataset.
+
+Ultimately, the project demonstrates how machine learning can transform housing data into useful predictive insights, providing a foundation for more efficient, consistent, and data-driven property valuation.
+
+<div align="center">
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:063D2B,50:C8A85D,100:063D2B" />
+
+### ✧ CORE IDEA ✧
+
+</div>
+
+> Instead of relying only on intuition, we use historical data, mathematical relationships, and a trained machine learning model to estimate house prices.
+
+<div align="center">
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:063D2B,50:2ECC71,100:063D2B" />
+
+</div>
+
+# <div align="center">✦ 02 · A POWERFUL INTRODUCTION FOR YOUR PRESENTATION ✦</div>
+
+<div align="center">
+
+### *From Data to Intelligent Property Valuation*
+
+</div>
+
+Good morning, respected professor and everyone.
+
+Today, I am proud to present our project, **“House Price Prediction Using Machine Learning.”**
+
+Imagine being able to estimate the price of a house by analyzing a set of meaningful characteristics rather than relying entirely on manual judgment. This is where machine learning becomes valuable.
+
+In the real estate market, property prices are influenced by many factors, such as average income, house age, room availability, and population. Understanding how these factors relate to property prices can help us build more informed estimation systems.
+
+The main objective of our project is to develop a predictive model that learns from historical housing data and estimates property prices using **Multiple Linear Regression**.
+
+Throughout this project, we combine data preprocessing, exploratory data analysis, mathematical modeling, Python programming, and performance evaluation into one complete machine learning workflow.
+
+Our model achieved an \(R^2\) score of approximately **0.920** on the test set, according to our report. This result demonstrates the potential of a relatively simple regression algorithm to capture meaningful patterns in housing data.
+
+More importantly, this project is not just about predicting a number. It is about understanding how data becomes information, how mathematical models learn relationships, and how machine learning can support real-world decision-making.
+
+<div align="center">
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:063D2B,50:C8A85D,100:063D2B" />
+
+### ✦ LET US EXPLORE HOW WE TRANSFORMED RAW HOUSING DATA INTO A PREDICTIVE MODEL ✦
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:063D2B,50:2ECC71,100:063D2B" />
+
+</div>
+
+# <div align="center">✦ 03 · THE PROBLEM STATEMENT ✦</div>
+
+<div align="center">
+
+### *Understanding the Challenge Behind the Prediction*
+
+</div>
+
+The real problem is not simply calculating the price of a house. It is identifying a mathematical relationship between available housing features and the price we want to estimate.
+
+The problem has four main parts:
+
+<table>
+  <tr>
+    <td align="center" width="70"><strong>01</strong></td>
+    <td><strong>INPUT</strong><br/>Housing-related information, such as average area income, house age, number of rooms, number of bedrooms, and population.</td>
+  </tr>
+  <tr>
+    <td align="center"><strong>02</strong></td>
+    <td><strong>LEARNING</strong><br/>The algorithm analyzes examples of housing features and their known prices.</td>
+  </tr>
+  <tr>
+    <td align="center"><strong>03</strong></td>
+    <td><strong>PREDICTION</strong><br/>The trained model estimates a price for new input data.</td>
+  </tr>
+  <tr>
+    <td align="center"><strong>04</strong></td>
+    <td><strong>EVALUATION</strong><br/>We compare the model's predictions with actual prices to measure how well it performs.</td>
+  </tr>
+</table>
+
+<div align="center">
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:063D2B,50:C8A85D,100:063D2B" />
+
+### ◈ THE CENTRAL RESEARCH QUESTION ◈
+
+</div>
+
+> **Can a Multiple Linear Regression model learn useful relationships from housing data and predict house prices with an acceptable level of error?**
+
+<div align="center">
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:063D2B,50:2ECC71,100:063D2B" />
+
+*That question is the foundation of your entire project.*
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=5&color=0:063D2B,50:C8A85D,100:063D2B" />
+
+</div>
