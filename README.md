@@ -794,3 +794,77 @@ Correlation does not establish causation.
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=4&color=0:063D2B,50:2ECC71,100:063D2B" />
 
 </div>
+
+
+
+
+
+
+
+<WritingBlock id="58314" variant="document">## ◈ EQUATION 05 — MEAN ABSOLUTE ERROR
+Measuring the Average Absolute Prediction Error
+MAE measures the average absolute difference between actual and predicted prices.
+$$
+\mathrm{MAE} = \frac{1}{n}\sum_{i=1}^{n}\left|y_i-\hat{y}_i\right|
+$$
+Our reported result:
+<div align="center">
+<img src="https://img.shields.io/badge/MAE-%24 13%2C261-C8A85D?style=for-the-badge&labelColor=0D1117" alt="Reported MAE approximately $13,261"/>
+</div>
+$$
+\boxed{\mathrm{MAE}\approx \$13{,}261}
+$$
+This means the average absolute prediction error in the evaluated sample was approximately $13,261.
+Unlike signed residuals, absolute errors do not cancel out when predictions are above and below the actual prices.
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:063D2B,50:C8A85D,100:063D2B" />
+◈ EQUATION 06 — MEAN SQUARED ERROR
+Penalizing Larger Errors
+Mean Squared Error calculates the average of the squared differences between actual and predicted prices.
+$$
+\mathrm{MSE} = \frac{1}{n}\sum_{i=1}^{n}(y_i-\hat{y}_i)^2
+$$
+MSE penalizes large errors more heavily because each error is squared. Its units are squared currency units, so its numerical value is less intuitive to interpret directly as a price difference.
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:063D2B,50:2ECC71,100:063D2B" />
+◈ EQUATION 07 — ROOT MEAN SQUARED ERROR
+Interpreting Prediction Error in Price Units
+RMSE is the square root of MSE and expresses the prediction error in the same units as the target variable.
+$$
+\mathrm{RMSE} = \sqrt{\frac{1}{n}\sum_{i=1}^{n}(y_i-\hat{y}_i)^2}
+$$
+RMSE also penalizes larger errors more heavily than MAE.
+Interpretation: RMSE provides an error measure in dollars, making it easier to compare its magnitude with the prices being predicted.
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:063D2B,50:C8A85D,100:063D2B" />
+◈ EQUATION 08 — STANDARDIZATION
+Bringing Features to a Comparable Scale
+Standardization transforms a feature using its mean and standard deviation.
+$$
+z = \frac{x-\mu}{\sigma}
+$$
+Where:
+- \(x\) — the original feature value.
+- \(\mu\) — the mean calculated from the training set.
+- \(\sigma\) — the standard deviation calculated from the training set.
+- \(z\) — the standardized value.
+Standardization helps place numerical features on comparable scales. It does not automatically make the data normally distributed.
+For a correct evaluation, the scaler must be fitted using training data only and then applied to the test data.
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:063D2B,50:2ECC71,100:063D2B" />
+◈ EQUATION 09 — CORRELATION
+Discovering Linear Relationships Between Variables
+The Pearson correlation coefficient measures the strength and direction of a linear relationship between two variables.
+$$
+r_{XY} = \frac{\operatorname{Cov}(X,Y)}{\sigma_X\sigma_Y}
+$$
+Where:
+- \(r_{XY}\) — the correlation coefficient between variables \(X\) and \(Y\).
+- \(\operatorname{Cov}(X,Y)\) — their covariance.
+- \(\sigma_X\) and \(\sigma_Y\) — their standard deviations.
+The coefficient ranges from \(-1\) to \(+1\):
+- Positive correlation: The variables tend to increase together.
+- Negative correlation: One variable tends to decrease as the other increases.
+- Near-zero correlation: There is little or no linear relationship.
+Correlation does not establish causation.
+<div align="center">
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=4&color=0:063D2B,50:C8A85D,100:063D2B" />
+OBSIDIAN ESTATES AI
+MATHEMATICS · MACHINE LEARNING · REAL ESTATE VALUATION
+</div></WritingBlock>
