@@ -30,7 +30,7 @@
   <img src="assets/estate-animation.svg" width="90%" alt="Animated luxury estate" />
 </div>
 
-    ```html
+
 <div align="center">
   <svg width="100%" height="18" viewBox="0 0 1000 18"
        xmlns="http://www.w3.org/2000/svg">
@@ -47,4 +47,4 @@
           fill="none" stroke="#C8A85D" stroke-width="1.5" />
   </svg>
 </div>
- ```
+ 
