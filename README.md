@@ -179,3 +179,116 @@ The problem has four main parts:
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=5&color=0:063D2B,50:C8A85D,100:063D2B" />
 
 </div>
+
+ <div align="center">
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=4&color=0:063D2B,50:C8A85D,100:063D2B" />
+
+</div>
+
+## <img src="https://img.shields.io/badge/04-OBJECTIVES-176B50?style=for-the-badge&labelColor=0D1117" />
+
+### ✦ Objectives of the Project
+
+<div align="center">
+
+| | **OBJECTIVE** | **DESCRIPTION** |
+|:--:|:--|:--|
+| ◈ | **01 — Data Preparation** | Organize, inspect, and prepare the housing dataset for machine learning. |
+| ◈ | **02 — Data Analysis** | Explore patterns, distributions, and relationships between housing features and prices. |
+| ◈ | **03 — Model Development** | Train a supervised learning algorithm using Multiple Linear Regression. |
+| ◈ | **04 — Performance Evaluation** | Measure prediction quality using \(R^2\), MAE, and comparisons between actual and predicted prices. |
+| ◈ | **05 — Future Development** | Identify limitations and propose more advanced models and additional features. |
+
+</div>
+
+<div align="center">
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:063D2B,50:2ECC71,100:063D2B" />
+
+</div>
+
+## <img src="https://img.shields.io/badge/05-THE_DATASET-C8A85D?style=for-the-badge&labelColor=0D1117" />
+
+### ✦ The Dataset — The Foundation of the Entire System
+
+Your report uses the `USA_Housing.csv` dataset.
+
+<div align="center">
+
+<table>
+<tr>
+<td align="center" width="50%">
+
+<img src="https://img.shields.io/badge/DATASET-0D281D?style=flat-square" />
+
+<br/>
+
+# 5,000
+
+**Dataset Records**
+
+</td>
+<td align="center" width="50%">
+
+<img src="https://img.shields.io/badge/INPUT_FEATURES-176B50?style=flat-square" />
+
+<br/>
+
+# 5
+
+**Selected Input Features**
+
+</td>
+</tr>
+<tr>
+<td align="center" width="50%">
+
+<img src="https://img.shields.io/badge/TARGET-C8A85D?style=flat-square&labelColor=0D1117" />
+
+<br/>
+
+# Price
+
+**Target Variable**
+
+</td>
+<td align="center" width="50%">
+
+<img src="https://img.shields.io/badge/ALGORITHM-176B50?style=flat-square" />
+
+<br/>
+
+# Linear
+
+**Regression Model**
+
+</td>
+</tr>
+</table>
+
+</div>
+
+### ◈ Dataset Features
+
+| **Feature** | **Meaning** |
+|:--|:--|
+| `Avg. Area Income` | Average income in the area |
+| `Avg. Area House Age` | Average age of houses in the area |
+| `Avg. Area Number of Rooms` | Average number of rooms |
+| `Avg. Area Number of Bedrooms` | Average number of bedrooms |
+| `Area Population` | Population of the area |
+| `Price` | Value the model learns to predict |
+| `Address` | Excluded from the selected input features |
+
+<div align="center">
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:063D2B,50:C8A85D,100:063D2B" />
+
+<br/>
+
+*OBSIDIAN ESTATES AI · DATA-DRIVEN REAL ESTATE VALUATION*
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=4&color=0:063D2B,50:C8A85D,100:063D2B" />
+
+</div>
