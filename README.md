@@ -292,3 +292,230 @@ Your report uses the `USA_Housing.csv` dataset.
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=4&color=0:063D2B,50:C8A85D,100:063D2B" />
 
 </div>
+
+
+ <div align="center">
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=4&color=0:063D2B,50:C8A85D,100:063D2B" />
+
+</div>
+
+### ✦ WHY IS THE DATASET SO IMPORTANT?
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/DATA_IS_THE_FOUNDATION-123B2A?style=for-the-badge&labelColor=0D1117" />
+
+</div>
+
+Machine learning does not magically know the correct price of a house. It learns statistical patterns from examples.
+
+If the training data is incomplete, inaccurate, biased, or poorly representative of future properties, the resulting model may produce unreliable predictions.
+
+> **A strong model starts with appropriate data, not just sophisticated code.**
+
+<div align="center">
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:063D2B,50:2ECC71,100:063D2B" />
+
+</div>
+
+## <img src="https://img.shields.io/badge/06-TECHNOLOGIES_&_COMPONENTS-176B50?style=for-the-badge&labelColor=0D1117" />
+
+### ◈ The Technology Behind the Intelligence
+
+The project combines Python and essential data science libraries to implement the data-processing, model-training, prediction, visualization, and evaluation workflow.
+
+<table>
+  <tr>
+    <td width="76" align="center" valign="middle">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="48" alt="Python"/>
+    </td>
+    <td valign="middle">
+      **Python — The Programming Language**
+
+      Used to implement the data-processing, model-training, prediction, and evaluation workflow.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=1&color=0:063D2B,50:1C513B,100:063D2B" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" width="48" alt="Pandas"/>
+    </td>
+    <td valign="middle">
+      **Pandas — Data Manipulation**
+
+      Loads the CSV file and organizes the dataset into a table-like DataFrame.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=1&color=0:063D2B,50:1C513B,100:063D2B" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" width="48" alt="NumPy"/>
+    </td>
+    <td valign="middle">
+      **NumPy — Numerical Computing**
+
+      Supports numerical operations and mathematical calculations.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=1&color=0:063D2B,50:1C513B,100:063D2B" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" width="48" alt="Matplotlib"/>
+    </td>
+    <td valign="middle">
+      **Matplotlib — Visualization**
+
+      Creates charts for understanding data and inspecting model behavior.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=1&color=0:063D2B,50:1C513B,100:063D2B" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">
+      <img src="https://seaborn.pydata.org/_static/logo-wide-lightbg.svg" width="60" alt="Seaborn"/>
+    </td>
+    <td valign="middle">
+      **Seaborn — Statistical Visualization**
+
+      Helps visualize distributions, correlations, and relationships between variables.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=1&color=0:063D2B,50:1C513B,100:063D2B" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" width="56" alt="Scikit-learn"/>
+    </td>
+    <td valign="middle">
+      **Scikit-learn — Machine Learning**
+
+      Provides tools for splitting data, standardizing features, training Linear Regression, and evaluating predictions.
+    </td>
+  </tr>
+</table>
+
+<div align="center">
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:063D2B,50:C8A85D,100:063D2B" />
+
+</div>
+
+## <img src="https://img.shields.io/badge/07-COMPLETE_PROJECT_PIPELINE-C8A85D?style=for-the-badge&labelColor=0D1117" />
+
+### ◈ How the Project Works — From Raw Data to Prediction
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/STEP_01-DATA_LOADING-123B2A?style=for-the-badge" />
+
+### Load the Dataset
+
+Read `USA_Housing.csv` using Pandas.
+
+⬇
+
+<img src="https://img.shields.io/badge/STEP_02-DATA_PREPARATION-176B50?style=for-the-badge" />
+
+### Inspect and Prepare Data
+
+Check columns, data types, missing values, and suitability.
+
+⬇
+
+<img src="https://img.shields.io/badge/STEP_03-EXPLORATORY_ANALYSIS-123B2A?style=for-the-badge" />
+
+### Explore the Data
+
+Study distributions, relationships, and correlations.
+
+⬇
+
+<img src="https://img.shields.io/badge/STEP_04-FEATURE_SELECTION-176B50?style=for-the-badge" />
+
+### Select Features and Target
+
+Choose five input features and the `Price` target.
+
+⬇
+
+<img src="https://img.shields.io/badge/STEP_05-TRAIN_TEST_SPLIT-123B2A?style=for-the-badge" />
+
+### Split the Data
+
+Use the report's **70% training and 30% testing** split.
+
+⬇
+
+<img src="https://img.shields.io/badge/STEP_06-FEATURE_SCALING-176B50?style=for-the-badge" />
+
+### Standardize Features
+
+Apply feature scaling as described in the report.
+
+⬇
+
+<img src="https://img.shields.io/badge/STEP_07-MODEL_TRAINING-123B2A?style=for-the-badge" />
+
+### Train the Model
+
+Fit Multiple Linear Regression to the training examples.
+
+⬇
+
+<img src="https://img.shields.io/badge/STEP_08-PRICE_PREDICTION-176B50?style=for-the-badge" />
+
+### Make Predictions
+
+Estimate prices for the test examples.
+
+⬇
+
+<img src="https://img.shields.io/badge/STEP_09-PERFORMANCE_EVALUATION-C8A85D?style=for-the-badge&labelColor=0D1117" />
+
+### Evaluate the Results
+
+Calculate metrics and inspect actual versus predicted prices.
+
+</div>
+
+<div align="center">
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:063D2B,50:2ECC71,100:063D2B" />
+
+</div>
+
+### ⚠️ Important Technical Note
+
+To ensure correct evaluation, the feature scaler must be fitted **only on the training data** and then applied to the test data.
+
+If the scaler is fitted on the entire dataset before splitting, information from the test set may leak into preprocessing and affect the reliability of the evaluation.
+
+<div align="center">
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=4&color=0:063D2B,50:C8A85D,100:063D2B" />
+
+**OBSIDIAN ESTATES AI**
+
+*DATA → INTELLIGENCE → PREDICTION*
+
+</div>
