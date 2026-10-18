@@ -518,3 +518,279 @@ If the scaler is fitted on the entire dataset before splitting, information from
 *DATA → INTELLIGENCE → PREDICTION*
 
 </div>
+
+ <div align="center">
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=5&color=0:063D2B,50:C8A85D,100:063D2B" />
+
+</div>
+
+# <div align="center">✦ 08 · THE MATHEMATICAL HEART OF THE PROJECT ✦</div>
+
+<div align="center">
+
+### FROM MATHEMATICAL THEORY TO INTELLIGENT PREDICTION
+
+*Understanding the equations that power our house price prediction model.*
+
+<img src="https://img.shields.io/badge/MATHEMATICS-0D281D?style=for-the-badge&labelColor=0D1117" />
+<img src="https://img.shields.io/badge/REGRESSION-176B50?style=for-the-badge&labelColor=0D1117" />
+<img src="https://img.shields.io/badge/STATISTICAL_ANALYSIS-C8A85D?style=for-the-badge&labelColor=0D1117" />
+
+</div>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=3&color=0:063D2B,50:2ECC71,100:063D2B" />
+
+This is where we move beyond describing the project and demonstrate how the mathematics behind **Multiple Linear Regression** transforms housing characteristics into estimated property prices.
+
+---
+
+## ◈ EQUATION 01 — MULTIPLE LINEAR REGRESSION
+
+### The Foundation of Price Prediction
+
+The model estimates a house price by combining five input features, each multiplied by a coefficient learned during training.
+
+$$
+\hat{y}=b_0+b_1x_1+b_2x_2+\cdots+b_5x_5
+$$
+
+**Applied to our housing dataset:**
+
+$$
+\begin{aligned}
+\widehat{\text{Price}}={}&b_0\\
+&+b_1(\text{Income})\\
+&+b_2(\text{House Age})\\
+&+b_3(\text{Rooms})\\
+&+b_4(\text{Bedrooms})\\
+&+b_5(\text{Population})
+\end{aligned}
+$$
+
+**Where:**
+
+- \(\hat{y}\) — the predicted house price.
+- \(b_0\) — the intercept, or baseline term.
+- \(b_1,\ldots,b_5\) — the learned coefficients.
+- \(x_1,\ldots,x_5\) — the five input features.
+
+The algorithm learns the intercept and coefficients from the training examples.
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:063D2B,50:C8A85D,100:063D2B" />
+
+## ◈ EQUATION 02 — ORDINARY LEAST SQUARES
+
+### Minimizing the Prediction Error
+
+Linear Regression typically estimates its coefficients by minimizing the sum of squared residuals.
+
+$$
+J(\boldsymbol{\beta})
+=
+\sum_{i=1}^{n}(y_i-\hat{y}_i)^2
+$$
+
+**Where:**
+
+- \(y_i\) — the actual price.
+- \(\hat{y}_i\) — the predicted price.
+- \(n\) — the number of training examples.
+- \(J(\boldsymbol{\beta})\) — the total squared prediction error.
+- \(\boldsymbol{\beta}\) — the vector of model coefficients.
+
+**Why square the errors?**
+
+Squaring prevents positive and negative errors from cancelling each other and penalizes larger errors more strongly.
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:063D2B,50:2ECC71,100:063D2B" />
+
+## ◈ EQUATION 03 — RESIDUALS
+
+### Measuring the Difference Between Actual and Predicted Prices
+
+A residual represents the difference between the true house price and the model's prediction.
+
+$$
+e_i=y_i-\hat{y}_i
+$$
+
+**Example:**
+
+Suppose the actual price is \$300,000 and the predicted price is \$290,000.
+
+$$
+e=300{,}000-290{,}000
+$$
+
+$$
+\boxed{e=\$10{,}000}
+$$
+
+The positive residual means the model **underestimated** the house price by \$10,000.
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:063D2B,50:C8A85D,100:063D2B" />
+
+## ◈ EQUATION 04 — COEFFICIENT OF DETERMINATION
+
+### Understanding the \(R^2\) Score
+
+The coefficient of determination measures how much of the variation in actual prices is explained by the model, relative to a baseline that predicts the mean price.
+
+$$
+R^2
+=
+1-
+\frac{
+\displaystyle\sum_{i=1}^{n}(y_i-\hat{y}_i)^2
+}{
+\displaystyle\sum_{i=1}^{n}(y_i-\bar{y})^2
+}
+$$
+
+Here, \(\bar{y}\) is the mean of the actual prices.
+
+**Our reported test-set result:**
+
+$$
+\boxed{R^2\approx 0.920}
+$$
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/TEST_R²-0.920-C8A85D?style=for-the-badge&labelColor=0D1117" />
+
+</div>
+
+This means the model explains approximately **92% of the variation in house prices in the test dataset**, relative to the mean-based baseline.
+
+> Important: An \(R^2\) score of 0.920 does not mean that 92% of individual predictions are exactly correct.
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:063D2B,50:2ECC71,100:063D2B" />
+
+## ◈ EQUATION 05 — MEAN ABSOLUTE ERROR
+
+### Measuring the Average Absolute Prediction Error
+
+MAE measures the average absolute difference between actual and predicted prices.
+
+$$
+\mathrm{MAE}
+=
+\frac{1}{n}
+\sum_{i=1}^{n}|y_i-\hat{y}_i|
+$$
+
+**Our reported result:**
+
+$$
+\boxed{\mathrm{MAE}\approx \$13{,}261}
+$$
+
+This means the average absolute prediction error in the evaluated sample was approximately **\$13,261**.
+
+Unlike signed residuals, absolute errors do not cancel out when predictions are above and below the actual prices.
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:063D2B,50:C8A85D,100:063D2B" />
+
+## ◈ EQUATION 06 — MEAN SQUARED ERROR
+
+### Penalizing Larger Errors
+
+Mean Squared Error calculates the average of the squared differences between actual and predicted prices.
+
+$$
+\mathrm{MSE}
+=
+\frac{1}{n}
+\sum_{i=1}^{n}(y_i-\hat{y}_i)^2
+$$
+
+MSE penalizes large errors more heavily because each error is squared. Its units are **squared currency units**, so its numerical value is less intuitive to interpret directly as a price difference.
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:063D2B,50:2ECC71,100:063D2B" />
+
+## ◈ EQUATION 07 — ROOT MEAN SQUARED ERROR
+
+### Interpreting Prediction Error in Price Units
+
+RMSE is the square root of MSE and expresses the prediction error in the same units as the target variable.
+
+$$
+\mathrm{RMSE}
+=
+\sqrt{
+\frac{1}{n}
+\sum_{i=1}^{n}(y_i-\hat{y}_i)^2
+}
+$$
+
+RMSE also penalizes larger errors more heavily than MAE.
+
+**Interpretation:** RMSE provides an error measure in dollars, making it easier to compare its magnitude with the prices being predicted.
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:063D2B,50:C8A85D,100:063D2B" />
+
+## ◈ EQUATION 08 — STANDARDIZATION
+
+### Bringing Features to a Comparable Scale
+
+Standardization transforms a feature using its mean and standard deviation.
+
+$$
+z=\frac{x-\mu}{\sigma}
+$$
+
+**Where:**
+
+- \(x\) — the original feature value.
+- \(\mu\) — the mean calculated from the training set.
+- \(\sigma\) — the standard deviation calculated from the training set.
+- \(z\) — the standardized value.
+
+Standardization helps place numerical features on comparable scales. It **does not automatically make the data normally distributed**.
+
+For a correct evaluation, the scaler must be fitted using training data only and then applied to the test data.
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=2&color=0:063D2B,50:2ECC71,100:063D2B" />
+
+## ◈ EQUATION 09 — CORRELATION
+
+### Discovering Linear Relationships Between Variables
+
+The Pearson correlation coefficient measures the strength and direction of a linear relationship between two variables.
+
+$$
+r_{XY}
+=
+\frac{\operatorname{Cov}(X,Y)}
+{\sigma_X\sigma_Y}
+$$
+
+**Where:**
+
+- \(r_{XY}\) — the correlation coefficient between variables \(X\) and \(Y\).
+- \(\operatorname{Cov}(X,Y)\) — their covariance.
+- \(\sigma_X\) and \(\sigma_Y\) — their standard deviations.
+
+The coefficient ranges from \(-1\) to \(+1\):
+
+- **Positive correlation:** The variables tend to increase together.
+- **Negative correlation:** One variable tends to decrease as the other increases.
+- **Near-zero correlation:** There is little or no linear relationship.
+
+Correlation does not establish causation.
+
+<div align="center">
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=4&color=0:063D2B,50:C8A85D,100:063D2B" />
+
+### ✦ MATHEMATICS MEETS MACHINE LEARNING ✦
+
+*From coefficients and residuals to meaningful property price predictions.*
+
+**OBSIDIAN ESTATES AI**
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=4&color=0:063D2B,50:2ECC71,100:063D2B" />
+
+</div>
