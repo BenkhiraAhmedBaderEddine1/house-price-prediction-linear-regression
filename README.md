@@ -32,19 +32,8 @@
 
 
 <div align="center">
-  <svg width="100%" height="18" viewBox="0 0 1000 18"
-       xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <linearGradient id="emerald">
-        <stop offset="0%" stop-color="#063D2B" />
-        <stop offset="50%" stop-color="#2ECC71" />
-        <stop offset="100%" stop-color="#063D2B" />
-      </linearGradient>
-    </defs>
-    <path d="M0 5 H1000 M0 12 H1000"
-          stroke="url(#emerald)" stroke-width="2" />
-    <path d="M480 5 L490 1 L500 5 L510 1 L520 5"
-          fill="none" stroke="#C8A85D" stroke-width="1.5" />
-  </svg>
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:071A12,50:2ECC71,100:071A12&height=3&section=header" width="100%" alt="Green divider" />
+  <br/>
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:071A12,50:2ECC71,100:071A12&height=3&section=header" width="100%" alt="Green divider" />
 </div>
  
