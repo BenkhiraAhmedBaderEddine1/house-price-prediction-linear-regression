@@ -24,3 +24,8 @@
 <img src="https://capsule-render.vercel.app/api?type=soft&height=30&color=0:0B1712,50:C8A85D,100:0B1712&section=header" width="70%" />
 
 </div>
+
+
+<div align="center">
+  <img src="assets/estate-animation.svg" width="90%" alt="Animated luxury estate" />
+</div>
