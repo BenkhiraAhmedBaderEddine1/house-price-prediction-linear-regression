@@ -725,6 +725,7 @@ $$
 }
 $$
 
+
 RMSE also penalizes larger errors more heavily than MAE.
 
 **Interpretation:** RMSE provides an error measure in dollars, making it easier to compare its magnitude with the prices being predicted.
